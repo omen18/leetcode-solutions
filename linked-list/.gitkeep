@@ -1,0 +1,14 @@
+# LeetCode Solutions - omen18
+
+This repository contains my solutions to LeetCode problems, organized by topic.
+
+## Structure
+
+Each folder represents a problem category, and each file follows the naming convention:
+`<problem_number>_<problem_name>.py`
+
+## Running Solutions
+
+```bash
+python <category>/<solution_file>.py
+```
