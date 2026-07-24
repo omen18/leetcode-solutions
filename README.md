@@ -5,7 +5,7 @@
 <h1 align="center">🧠 LeetCode Solutions</h1>
 
 <p align="center">
-  <em>A curated collection of my LeetCode problem solutions — written in Python 🐍</em>
+  <em>A curated collection of my LeetCode problem solutions — written in Python 🐍 and Java ☕</em>
 </p>
 
 <p align="center">
@@ -16,6 +16,7 @@
     <img src="https://img.shields.io/badge/GitHub-omen18-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
 </p>
 
 ---
@@ -43,22 +44,22 @@
 ```
 leetcode-solutions/
 │
-├── 📁 arrays-and-hashing/        # Array manipulation, hashmaps, sets
-├── 📁 two-pointers/              # Two pointer technique problems
-├── 📁 sliding-window/            # Fixed & variable sliding windows
-├── 📁 stack/                     # Stack-based problems
-├── 📁 binary-search/             # Binary search variants
-├── 📁 linked-list/               # Singly & doubly linked lists
-├── 📁 trees/                     # Binary trees, BSTs, N-ary trees
-├── 📁 tries/                     # Trie / prefix tree problems
-├── 📁 heap-priority-queue/       # Min/max heaps, priority queues
-├── 📁 backtracking/              # Recursive backtracking
-├── 📁 graphs/                    # BFS, DFS, topological sort
-├── 📁 dynamic-programming/       # 1D & 2D DP problems
-├── 📁 greedy/                    # Greedy algorithm problems
-├── 📁 intervals/                 # Interval merging & scheduling
-├── 📁 math-and-geometry/         # Mathematical & geometric problems
-├── 📁 bit-manipulation/          # Bitwise operation problems
+├── 📁 arrays-and-hashing/        # Array manipulation, hashmaps, sets (.py, .java)
+├── 📁 two-pointers/              # Two pointer technique problems (.py, .java)
+├── 📁 sliding-window/            # Fixed & variable sliding windows (.py, .java)
+├── 📁 stack/                     # Stack-based problems (.py, .java)
+├── 📁 binary-search/             # Binary search variants (.py, .java)
+├── 📁 linked-list/               # Singly & doubly linked lists (.py, .java)
+├── 📁 trees/                     # Binary trees, BSTs, N-ary trees (.py, .java)
+├── 📁 tries/                     # Trie / prefix tree problems (.py, .java)
+├── 📁 heap-priority-queue/       # Min/max heaps, priority queues (.py, .java)
+├── 📁 backtracking/              # Recursive backtracking (.py, .java)
+├── 📁 graphs/                    # BFS, DFS, topological sort (.py, .java)
+├── 📁 dynamic-programming/       # 1D & 2D DP problems (.py, .java)
+├── 📁 greedy/                    # Greedy algorithm problems (.py, .java)
+├── 📁 intervals/                 # Interval merging & scheduling (.py, .java)
+├── 📁 math-and-geometry/         # Mathematical & geometric problems (.py, .java)
+├── 📁 bit-manipulation/          # Bitwise operation problems (.py, .java)
 │
 ├── 📄 README.md                  # You are here!
 └── 📁 assets/                    # Images and resources
@@ -69,54 +70,55 @@ leetcode-solutions/
 ## 🗂️ Solutions Index
 
 ### Arrays & Hashing
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Solution](arrays-and-hashing/001_two_sum.py) | HashMap lookup |
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Solution](arrays-and-hashing/049_group_anagrams.py) | Sorted key grouping |
-| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 🟡 Medium | [Solution](arrays-and-hashing/128_longest_consecutive_sequence.py) | HashSet approach |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Python](arrays-and-hashing/001_two_sum.py) | [Java](arrays-and-hashing/001_two_sum.java) | HashMap lookup |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](arrays-and-hashing/049_group_anagrams.py) | [Java](arrays-and-hashing/049_group_anagrams.java) | Sorted key grouping |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 🟡 Medium | [Python](arrays-and-hashing/128_longest_consecutive_sequence.py) | [Java](arrays-and-hashing/128_longest_consecutive_sequence.java) | HashSet approach |
 
 ### Two Pointers
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 Easy | [Solution](two-pointers/125_valid_palindrome.py) | Two pointer squeeze |
-| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [Solution](two-pointers/015_3sum.py) | Sort + two pointers |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 Easy | [Python](two-pointers/125_valid_palindrome.py) | [Java](two-pointers/125_valid_palindrome.java) | Two pointer squeeze |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [Python](two-pointers/015_3sum.py) | [Java](two-pointers/015_3sum.java) | Sort + two pointers |
 
 ### Sliding Window
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 🟢 Easy | [Solution](sliding-window/121_best_time_to_buy_and_sell_stock.py) | Track min price |
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | [Solution](sliding-window/003_longest_substring.py) | Variable window + set |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 🟢 Easy | [Python](sliding-window/121_best_time_to_buy_and_sell_stock.py) | [Java](sliding-window/121_best_time_to_buy_and_sell_stock.java) | Track min price |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | [Python](sliding-window/003_longest_substring.py) | [Java](sliding-window/003_longest_substring.java) | Variable window + set |
 
 ### Stack
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [Solution](stack/020_valid_parentheses.py) | Stack matching |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [Python](stack/020_valid_parentheses.py) | [Java](stack/020_valid_parentheses.java) | Stack matching |
 
 ### Binary Search
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | 🟢 Easy | [Solution](binary-search/704_binary_search.py) | Classic binary search |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | 🟢 Easy | [Python](binary-search/704_binary_search.py) | [Java](binary-search/704_binary_search.java) | Classic binary search |
 
 ### Trees
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 🟢 Easy | [Solution](trees/226_invert_binary_tree.py) | Recursive swap |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | 🟢 Easy | [Solution](trees/104_maximum_depth.py) | DFS recursion |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 🟢 Easy | [Python](trees/226_invert_binary_tree.py) | [Java](trees/226_invert_binary_tree.java) | Recursive swap |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | 🟢 Easy | [Python](trees/104_maximum_depth.py) | [Java](trees/104_maximum_depth.java) | DFS recursion |
 
 ### Dynamic Programming
-| # | Problem | Difficulty | Solution | Notes |
-|:-:|---------|:----------:|:--------:|-------|
-| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 🟢 Easy | [Solution](dynamic-programming/070_climbing_stairs.py) | Fibonacci pattern |
-| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | 🟡 Medium | [Solution](dynamic-programming/198_house_robber.py) | DP with skip logic |
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 🟢 Easy | [Python](dynamic-programming/070_climbing_stairs.py) | [Java](dynamic-programming/070_climbing_stairs.java) | Fibonacci pattern |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | 🟡 Medium | [Python](dynamic-programming/198_house_robber.py) | [Java](dynamic-programming/198_house_robber.java) | DP with skip logic |
 
 > 📝 *This is a starter index — add rows as you solve more problems!*
 
 ---
 
-## 🏷️ Solution Template
+## 🏷️ Solution Templates
 
-Each solution file follows this consistent format:
+Each solution file follows a consistent docstring header:
 
+### Python 🐍 Template
 ```python
 """
 Problem: <Problem Name>
@@ -129,10 +131,29 @@ Time Complexity: O(?)
 Space Complexity: O(?)
 """
 
-
 class Solution:
     def method_name(self, params):
         pass
+```
+
+### Java ☕ Template
+```java
+/*
+ * Problem: <Problem Name>
+ * LeetCode #: <Number>
+ * Difficulty: Easy / Medium / Hard
+ * Link: https://leetcode.com/problems/<slug>/
+ *
+ * Approach: <Brief description of approach>
+ * Time Complexity: O(?)
+ * Space Complexity: O(?)
+ */
+
+public class Solution {
+    public int solutionMethod(int[] params) {
+        return 0;
+    }
+}
 ```
 
 ---
@@ -144,8 +165,12 @@ class Solution:
 git clone https://github.com/omen18/leetcode-solutions.git
 cd leetcode-solutions
 
-# Run any solution
-python arrays-and-hashing/001_two_sum.py
+# Run Python solutions
+python3 arrays-and-hashing/001_two_sum.py
+
+# Compile and run Java solutions
+javac arrays-and-hashing/001_two_sum.java
+java -cp arrays-and-hashing Solution
 ```
 
 ---
