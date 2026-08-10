@@ -4,41 +4,55 @@ LeetCode #: 51
 Difficulty: Hard
 Link: https://leetcode.com/problems/n-queens/
 
-Approach: Backtracking. Place queens row by row while tracking occupied columns, main diagonals (r + c), and anti-diagonals (r - c) using sets. Build board configuration when r == n.
+Approach: Backtracking placing one queen per row while tracking attacked columns, 
+          positive diagonals (row + col), and negative diagonals (row - col).
 Time Complexity: O(N!)
-Space Complexity: O(N) for column and diagonal tracking sets and recursion stack.
+Space Complexity: O(N^2)
 """
 
 from typing import List
 
+
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         cols = set()
-        pos_diag = set()  # r + c
-        neg_diag = set()  # r - c
-        result = []
+        posDiag = set()  # (r + c)
+        negDiag = set()  # (r - c)
+
+        res = []
         board = [["."] * n for _ in range(n)]
-        
-        def backtrack(r: int) -> None:
+
+        def backtrack(r):
             if r == n:
-                result.append(["".join(row) for row in board])
+                copy = ["".join(row) for row in board]
+                res.append(copy)
                 return
-            
+
             for c in range(n):
-                if c in cols or (r + c) in pos_diag or (r - c) in neg_diag:
+                if c in cols or (r + c) in posDiag or (r - c) in negDiag:
                     continue
-                
+
                 cols.add(c)
-                pos_diag.add(r + c)
-                neg_diag.add(r - c)
-                board[r][c] = 'Q'
-                
+                posDiag.add(r + c)
+                negDiag.add(r - c)
+                board[r][c] = "Q"
+
                 backtrack(r + 1)
-                
+
                 cols.remove(c)
-                pos_diag.remove(r + c)
-                neg_diag.remove(r - c)
-                board[r][c] = '.'
-                
+                posDiag.remove(r + c)
+                negDiag.remove(r - c)
+                board[r][c] = "."
+
         backtrack(0)
-        return result
+        return res
+
+
+# --- Test ---
+if __name__ == "__main__":
+    sol = Solution()
+    print("N = 4 Solutions:")
+    for solution in sol.solveNQueens(4):
+        for row in solution:
+            print(row)
+        print()

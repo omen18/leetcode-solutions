@@ -4,34 +4,44 @@ LeetCode #: 52
 Difficulty: Hard
 Link: https://leetcode.com/problems/n-queens-ii/
 
-Approach: Backtracking with Bitwise Operations. Track occupied columns, main diagonals, and anti-diagonals using integer bitmasks for maximum efficiency.
+Approach: Backtracking to count valid queen placements using sets for column and diagonal attacks.
 Time Complexity: O(N!)
-Space Complexity: O(N) for recursion stack depth.
+Space Complexity: O(N)
 """
 
-from typing import List
 
 class Solution:
     def totalNQueens(self, n: int) -> int:
-        count = 0
-        
-        def backtrack(r: int, cols: int, pos_diag: int, neg_diag: int) -> None:
-            nonlocal count
+        cols = set()
+        posDiag = set()  # (r + c)
+        negDiag = set()  # (r - c)
+
+        def backtrack(r) -> int:
             if r == n:
-                count += 1
-                return
-            
-            available = ((1 << n) - 1) & ~(cols | pos_diag | neg_diag)
-            
-            while available:
-                position = available & -available
-                available &= available - 1
-                backtrack(
-                    r + 1,
-                    cols | position,
-                    (pos_diag | position) << 1,
-                    (neg_diag | position) >> 1
-                )
-                
-        backtrack(0, 0, 0, 0)
-        return count
+                return 1
+
+            count = 0
+            for c in range(n):
+                if c in cols or (r + c) in posDiag or (r - c) in negDiag:
+                    continue
+
+                cols.add(c)
+                posDiag.add(r + c)
+                negDiag.add(r - c)
+
+                count += backtrack(r + 1)
+
+                cols.remove(c)
+                posDiag.remove(r + c)
+                negDiag.remove(r - c)
+
+            return count
+
+        return backtrack(0)
+
+
+# --- Test ---
+if __name__ == "__main__":
+    sol = Solution()
+    print("N = 4 total solutions:", sol.totalNQueens(4))  # 2
+    print("N = 8 total solutions:", sol.totalNQueens(8))  # 92

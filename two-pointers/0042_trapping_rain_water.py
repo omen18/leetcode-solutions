@@ -4,12 +4,13 @@ LeetCode #: 42
 Difficulty: Hard
 Link: https://leetcode.com/problems/trapping-rain-water/
 
-Approach: Two pointers `left` and `right` with `left_max` and `right_max`. Move the pointer corresponding to smaller height, tracking max heights and adding trapped water `max_height - current_height`.
+Approach: Two pointers tracking max height from left (left_max) and right (right_max).
 Time Complexity: O(n)
 Space Complexity: O(1)
 """
 
 from typing import List
+
 
 class Solution:
     def trap(self, height: List[int]) -> int:
@@ -31,3 +32,9 @@ class Solution:
                 water += right_max - height[right]
 
         return water
+
+
+# --- Test ---
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))  # 6

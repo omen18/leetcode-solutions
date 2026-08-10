@@ -75,12 +75,15 @@ leetcode-solutions/
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Python](arrays-and-hashing/001_two_sum.py) | [Java](arrays-and-hashing/001_two_sum.java) | HashMap lookup |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](arrays-and-hashing/049_group_anagrams.py) | [Java](arrays-and-hashing/049_group_anagrams.java) | Sorted key grouping |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 🟡 Medium | [Python](arrays-and-hashing/128_longest_consecutive_sequence.py) | [Java](arrays-and-hashing/128_longest_consecutive_sequence.java) | HashSet approach |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | [Python](arrays-and-hashing/0217_contains_duplicate.py) | [Java](arrays-and-hashing/0217_contains_duplicate.java) | HashSet lookup |
 
 ### Two Pointers
 | # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
 |:-:|---------|:----------:|:---------:|:-------:|-------|
-| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 Easy | [Python](two-pointers/125_valid_palindrome.py) | [Java](two-pointers/125_valid_palindrome.java) | Two pointer squeeze |
+| 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 🟡 Medium | [Python](two-pointers/0011_container_with_most_water.py) | [Java](two-pointers/0011_container_with_most_water.java) | Two pointers inward |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [Python](two-pointers/015_3sum.py) | [Java](two-pointers/015_3sum.java) | Sort + two pointers |
+| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 🔴 Hard | [Python](two-pointers/0042_trapping_rain_water.py) | [Java](two-pointers/0042_trapping_rain_water.java) | Two pointers max boundaries |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 Easy | [Python](two-pointers/125_valid_palindrome.py) | [Java](two-pointers/125_valid_palindrome.java) | Two pointer squeeze |
 
 ### Sliding Window
 | # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
@@ -97,6 +100,12 @@ leetcode-solutions/
 | # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
 |:-:|---------|:----------:|:---------:|:-------:|-------|
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | 🟢 Easy | [Python](binary-search/704_binary_search.py) | [Java](binary-search/704_binary_search.java) | Classic binary search |
+
+### Backtracking
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | 🔴 Hard | [Python](backtracking/0051_n_queens.py) | [Java](backtracking/0051_n_queens.java) | Diagonal tracking backtrack |
+| 52 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 🔴 Hard | [Python](backtracking/0052_n_queens_ii.py) | [Java](backtracking/0052_n_queens_ii.java) | Fast solution count backtrack |
 
 ### Trees
 | # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
