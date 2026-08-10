@@ -113,11 +113,29 @@ leetcode-solutions/
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 🟢 Easy | [Python](trees/226_invert_binary_tree.py) | [Java](trees/226_invert_binary_tree.java) | Recursive swap |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | 🟢 Easy | [Python](trees/104_maximum_depth.py) | [Java](trees/104_maximum_depth.java) | DFS recursion |
 
+### Linked List
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [Python](linked-list/0002_add_two_numbers.py) | [Java](linked-list/0002_add_two_numbers.java) | Elementary addition with carry |
+| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 🟡 Medium | [Python](linked-list/0019_remove_nth_node_from_end_of_list.py) | [Java](linked-list/0019_remove_nth_node_from_end_of_list.java) | Two pointers n gap |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 Easy | [Python](linked-list/0021_merge_two_sorted_lists.py) | [Java](linked-list/0021_merge_two_sorted_lists.java) | Dummy head pointers |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 🟢 Easy | [Python](linked-list/0141_linked_list_cycle.py) | [Java](linked-list/0141_linked_list_cycle.java) | Tortoise and Hare pointers |
+| 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | 🟡 Medium | [Python](linked-list/0146_lru_cache.py) | [Java](linked-list/0146_lru_cache.java) | DLL + HashMap O(1) |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 🟢 Easy | [Python](linked-list/0206_reverse_linked_list.py) | [Java](linked-list/0206_reverse_linked_list.java) | Iterative 3-pointer |
+
+### Graphs
+| # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
+|:-:|---------|:----------:|:---------:|:-------:|-------|
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 🟡 Medium | [Python](graphs/0200_number_of_islands.py) | [Java](graphs/0200_number_of_islands.java) | DFS grid sink |
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | 🟡 Medium | [Python](graphs/0207_course_schedule.py) | [Java](graphs/0207_course_schedule.java) | Topological sort Kahn's BFS |
+
 ### Dynamic Programming
 | # | Problem | Difficulty | Python 🐍 | Java ☕ | Notes |
 |:-:|---------|:----------:|:---------:|:-------:|-------|
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 🟢 Easy | [Python](dynamic-programming/070_climbing_stairs.py) | [Java](dynamic-programming/070_climbing_stairs.java) | Fibonacci pattern |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | 🟡 Medium | [Python](dynamic-programming/198_house_robber.py) | [Java](dynamic-programming/198_house_robber.java) | DP with skip logic |
+| 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | 🟡 Medium | [Python](dynamic-programming/0300_longest_increasing_subsequence.py) | [Java](dynamic-programming/0300_longest_increasing_subsequence.java) | Patience sort binary search |
+| 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | 🟡 Medium | [Python](dynamic-programming/0322_coin_change.py) | [Java](dynamic-programming/0322_coin_change.java) | 1D DP bottom-up |
 
 > 📝 *This is a starter index — add rows as you solve more problems!*
 
